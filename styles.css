@@ -411,3 +411,20 @@ main {
     display: none;
   }
 }
+
+.credential-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  color: #2563eb; /* blue-600 */
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.credential-link:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
