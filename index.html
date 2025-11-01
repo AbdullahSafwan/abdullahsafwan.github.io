@@ -2,15 +2,9 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVS9TD2LYE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-GVS9TD2LYE');
-  </script>
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio" />
@@ -31,25 +25,33 @@
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
-          <a class="link link--nav" href="#work-experience">Work Experience</a>
+          <a class="link link--nav" href="#work-experience"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Work Experience'});">Work
+            Experience</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#skills">Skills</a>
+          <a class="link link--nav" href="#skills"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Skills'});">Skills</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
+          <a class="link link--nav" href="#projects"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Projects'});">Projects</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#education">Education</a>
+          <a class="link link--nav" href="#education"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Education'});">Education</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#achievements">Achievements</a>
+          <a class="link link--nav" href="#achievements"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Achievements'});">Achievements</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#certifications">Certifications</a>
+          <a class="link link--nav" href="#certifications"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Certifications'});">Certifications</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#contact">Contact</a>
+          <a class="link link--nav" href="#contact"
+            onclick="gtag('event', 'navigation_click', {'event_category': 'navigation', 'event_label': 'Contact'});">Contact</a>
         </li>
       </ul>
 
@@ -74,16 +76,20 @@
         Software Engineer at Diya Interactive.
       </p>
       <div class="about__contact center">
-        <a href="mailto:abdullahsafwan768@gmail.com">
+        <a href="mailto:abdullahsafwan768@gmail.com"
+          onclick="gtag('event', 'click_email', {'event_category': 'contact', 'event_label': 'Header Email Button'});">
           <span class="btn btn--outline">Email me</span>
         </a>
-        <a href="AbdullahSafwan.pdf" download>
+        <a href="AbdullahSafwan.pdf" download
+          onclick="gtag('event', 'download_resume', {'event_category': 'engagement', 'event_label': 'Resume PDF'});">
           <span class="btn btn--outline">Download Resume</span>
         </a>
-        <a href="https://github.com/abdullahsafwan" aria-label="github" class="link link--icon">
+        <a href="https://github.com/abdullahsafwan" aria-label="github" class="link link--icon"
+          onclick="gtag('event', 'click_github', {'event_category': 'social', 'event_label': 'Header GitHub Link'});">
           <i aria-hidden="true" class="fab fa-github fa-2x"></i>
         </a>
-        <a href="https://linkedin.com/in/ash768" aria-label="linkedin" class="link link--icon">
+        <a href="https://linkedin.com/in/ash768" aria-label="linkedin" class="link link--icon"
+          onclick="gtag('event', 'click_linkedin', {'event_category': 'social', 'event_label': 'Header LinkedIn Link'});">
           <i aria-hidden="true" class="fab fa-linkedin fa-2x"></i>
         </a>
       </div>
@@ -217,7 +223,9 @@
         <div class="project">
           <h3>B.E Computer Systems Engineering</h3>
           <p class="project__description">
-            <a href="https://duet.edu.pk/" target="_blank" class="credential-link">DUET Karachi</a><br />11/2018 -
+            <a href="https://duet.edu.pk/" target="_blank" class="credential-link"
+              onclick="gtag('event', 'click_external_link', {'event_category': 'education', 'event_label': 'DUET Website'});">DUET
+              Karachi</a><br />11/2018 -
             10/2022<br /><br />
             • Majored in Machine Learning<br />
             • 3.53 CGPA
@@ -243,7 +251,8 @@
           <p class="project__description">
             Created and managed TrickyTorials YouTube channel focused on SEO content<br />
             (12/2017 - 07/2019)<br />
-            <a href="https://www.youtube.com/TrickyTorials" target="_blank" class="credential-link">
+            <a href="https://www.youtube.com/TrickyTorials" target="_blank" class="credential-link"
+              onclick="gtag('event', 'click_external_link', {'event_category': 'achievement', 'event_label': 'YouTube Channel'});">
               www.youtube.com/TrickyTorials
             </a>
           </p>
@@ -260,7 +269,8 @@
           <p class="project__description">
             McKinsey &amp; Company – Issued Jul 2025<br />
             <a href="https://www.credly.com/badges/cdf6ad51-1554-4c13-a8c2-5906247b6e60/" target="_blank"
-              class="credential-link">
+              class="credential-link"
+              onclick="gtag('event', 'click_credential', {'event_category': 'certification', 'event_label': 'McKinsey Forward Program'});">
               View Credential
             </a>
           </p>
@@ -271,7 +281,8 @@
           <p class="project__description">
             IBM – Issued Oct 2025<br />
             <a href="https://www.credly.com/badges/53f5b7d5-e2cf-4459-9d6c-3e64672e9712/" target="_blank"
-              class="credential-link">
+              class="credential-link"
+              onclick="gtag('event', 'click_credential', {'event_category': 'certification', 'event_label': 'AI Fundamentals IBM'});">
               View Credential
             </a>
           </p>
@@ -296,15 +307,23 @@
     <section class="section contact center" id="contact">
       <h2 class="section__title">Contact</h2>
       <div class="about__contact center">
-        <a href="mailto:abdullahsafwan768@gmail.com" style="margin-right: 1em;">
+        <a href="mailto:abdullahsafwan768@gmail.com" style="margin-right: 1em;"
+          onclick="gtag('event', 'click_email', {'event_category': 'contact', 'event_label': 'Contact Section Email'});">
           <span class="btn btn--outline">Email me</span>
         </a>
-        <a href="https://linkedin.com/in/ash768" target="_blank">
+        <a href="https://linkedin.com/in/ash768" target="_blank"
+          onclick="gtag('event', 'click_linkedin', {'event_category': 'social', 'event_label': 'Contact Section LinkedIn'});">
           <span class="btn btn--outline">LinkedIn</span>
         </a>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p style="text-align: center; padding: 2em 0; font-size: 0.9em;">
+      <a href="privacy.html" class="link">Privacy Policy</a>
+    </p>
+  </footer>
 
   <div class="scroll-container">
     <div class="scroll-top">
